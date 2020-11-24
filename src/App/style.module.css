@@ -162,6 +162,7 @@ button.shake {
 }
 
 .show_god {
+  object-fit: scale-down;
   position: absolute;
   margin-top: 100px;
 
@@ -178,5 +179,27 @@ button.shake {
   to {
     opacity: 1;
     transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    margin-top: 30%;
+  }
+
+  .we {
+    font-size: 50px;
+  }
+
+  .for_sure {
+    font-size: 30px;
+  }
+  .survive {
+    font-size: 40px;
+  }
+
+  .variant {
+    margin: 20px;
+    font-size: 20px;
   }
 }
