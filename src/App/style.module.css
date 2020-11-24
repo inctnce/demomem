@@ -7,6 +7,23 @@
   align-items: center;
 }
 
+.closed_wrapper {
+  animation-duration: 1s;
+  animation-name: close_wrapper;
+  animation-fill-mode: forwards;
+}
+
+@keyframes close_wrapper {
+  from {
+    opacity: 1;
+  }
+  to {
+    transform: rotate(180deg);
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
 .question {
   display: flex;
   flex-direction: row;
@@ -25,6 +42,7 @@
 
 @keyframes show_we {
   from {
+    display: none;
     margin-top: -150px;
   }
 
@@ -53,6 +71,7 @@
 
 .survive {
   font-family: Cochin;
+  font-style: italic;
   font-size: 100px;
 
   animation-duration: 1s;
@@ -61,6 +80,7 @@
 
 @keyframes show_survive {
   from {
+    display: none;
     margin-top: 500px;
   }
 
@@ -134,5 +154,29 @@ button.shake {
   }
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.god {
+  display: none;
+}
+
+.show_god {
+  position: absolute;
+  margin-top: 100px;
+
+  animation-duration: 1s;
+  animation-name: show_god;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show_god {
+  from {
+    opacity: 0;
+    transform: rotate(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0deg);
   }
 }

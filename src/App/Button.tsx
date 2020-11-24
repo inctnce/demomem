@@ -4,15 +4,23 @@ import style from "./style.module.css";
 type Props = {
   title: string;
   textStyle?: string;
+  onClick?: any;
+  isAnimate?: boolean;
 };
 
 const Button = (props: Props) => {
   const [shake, setShake] = React.useState<boolean>(false);
 
   const animate = () => {
-    setShake(true);
-    const timeout = setTimeout(() => setShake(false), 2000);
-    return () => clearTimeout(timeout);
+    if (props.onClick) {
+      props.onClick();
+    }
+
+    if (props.isAnimate) {
+      setShake(true);
+      const timeout = setTimeout(() => setShake(false), 2000);
+      return () => clearTimeout(timeout);
+    }
   };
 
   return (
