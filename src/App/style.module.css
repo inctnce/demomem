@@ -1,0 +1,138 @@
+.app {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.we {
+  font-family: Copyist;
+  font-size: 185px;
+
+  animation-duration: 1s;
+  animation-name: show_we;
+}
+
+@keyframes show_we {
+  from {
+    margin-top: -150px;
+  }
+
+  to {
+    margin-top: none;
+  }
+}
+
+.for_sure {
+  font-family: ComicSans;
+  font-size: 85px;
+
+  animation-duration: 1s;
+  animation-name: show_for_sure;
+}
+
+@keyframes show_for_sure {
+  from {
+    margin-right: -500px;
+  }
+
+  to {
+    margin-right: none;
+  }
+}
+
+.survive {
+  font-family: Cochin;
+  font-size: 100px;
+
+  animation-duration: 1s;
+  animation-name: show_survive;
+}
+
+@keyframes show_survive {
+  from {
+    margin-top: 500px;
+  }
+
+  to {
+    margin-top: none;
+  }
+}
+
+.variants {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.variant {
+  margin: 100px;
+  font-family: ComicSans;
+  font-size: 50px;
+}
+
+.v1 {
+  color: violet;
+}
+
+.v2 {
+  color: white;
+}
+
+.v3 {
+  color: red;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+button.shake {
+  animation: shake 1s infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-2deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(3deg);
+  }
+  30% {
+    transform: translate(0px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(2px, 1px) rotate(-2deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(4deg);
+  }
+  90% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}

@@ -1,13 +1,31 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* font-family: "Comic Sans MS", "Copyist Thin 185", "Cochin", sans-serif; */
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: #ffc5eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: Cochin;
+  src: url(../src/assets/fonts/COCHIN.ttc);
+}
+
+@font-face {
+  font-family: ComicSans;
+  src: url(../src/assets/fonts/COMICBD.ttf);
+}
+
+@font-face {
+  font-family: Copyist;
+  src: url(../src/assets/fonts/COPYIST.ttf);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
